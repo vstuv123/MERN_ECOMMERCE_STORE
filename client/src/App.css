@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*Chrome, safari, Edge, Opera*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  cursor: url("./images/cursor.png"), auto;
+}
+
+.greenColor {
+  color: green !important;
+}
+
+.redColor {
+  color: red !important;
+}
+
+/* Add transition to footer */
+.footer {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* When content is fully loaded, set footer to visible */
+.footer.visible {
+  opacity: 1;
+}
